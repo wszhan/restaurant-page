@@ -57,3 +57,9 @@ div#contact-tab:hover::before {
 footer {
     text-align: center;
 }
+
+#credits {
+    position: absolute;
+    right: var(--body-padding);
+    bottom: var(--body-padding);
+}

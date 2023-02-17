@@ -1,5 +1,5 @@
 import ImageChef from './assets/chef.jpeg';
-import { generateImageElement } from './utils';
+import { generateImageCredits, generateImageElement } from './utils';
 
 const contentDivContainer = document.getElementById('content');
 
