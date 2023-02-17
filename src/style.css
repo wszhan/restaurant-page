@@ -29,6 +29,10 @@ header {
     align-items: center;
 }
 
+.nav-tab:hover {
+    background-color: rgb(229, 233, 234);
+}
+
 .nav-tab:hover span {
     display: none;
 }
