@@ -1,4 +1,5 @@
 import './style.css';
+import { generateHomeTab } from './home';
 
 const body = document.body;
 const contentDivContainer = document.getElementById('content');
@@ -23,6 +24,13 @@ function generateTab(tabName, header) {
     header.appendChild(tab);
 }
 
+function addTabEventListeners() {
+    const homeTab = document.querySelector('#home-tab');
+    homeTab.addEventListener('click', () => {
+        generateHomeTab();
+    })
+}
+
 (function init() {
     (function generateNavBar() {
         const header = document.createElement('header');
@@ -31,6 +39,9 @@ function generateTab(tabName, header) {
         });
         body.insertBefore(header, contentDivContainer);
     })();
+
+    addTabEventListeners();
+
     (function generateFooter() {
         const footer = document.createElement('footer');
         footer.innerText = 'Copyright ©️ 2023 OO Studio';
