@@ -1,0 +1,20 @@
+.nav-tab {
+    height: 2em;
+}
+
+.nav-tab:hover span {
+    display: none;
+}
+
+div#home-tab:hover::before {
+    content: "主页";
+}
+div#menu-tab:hover::before {
+    content: "菜单";
+}
+div#about-tab:hover::before {
+    content: "餐厅介绍";
+}
+div#contact-tab:hover::before {
+    content: "联系方式";
+}

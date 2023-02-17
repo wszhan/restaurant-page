@@ -1,1 +1,1 @@
-console.log("gibberish");
+import './style.css';
