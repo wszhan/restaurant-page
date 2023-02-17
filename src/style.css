@@ -1,5 +1,32 @@
+:root {
+    --body-padding: 1rem;
+
+    --header-flex-gap: 1rem;
+}
+
+body {
+    margin: 0;
+    padding: var(--body-padding); 
+    height: calc(100vh - 2 * var(--body-padding));
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+header {
+    display: flex;
+    gap: var(--header-flex-gap);
+    justify-content: space-around;
+}
+
 .nav-tab {
     height: 2em;
+    width: calc(100vw / 4 - 5 * var(--header-flex-gap));
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .nav-tab:hover span {
@@ -17,4 +44,10 @@ div#about-tab:hover::before {
 }
 div#contact-tab:hover::before {
     content: "联系方式";
+}
+
+
+
+footer {
+    text-align: center;
 }
