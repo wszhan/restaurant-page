@@ -22,7 +22,7 @@ header {
 
 .nav-tab {
     height: 2em;
-    width: calc(100vw / 4 - 5 * var(--header-flex-gap));
+    width: calc((100vw - 4 * var(--header-flex-gap)) / 4);
 
     display: flex;
     justify-content: center;
