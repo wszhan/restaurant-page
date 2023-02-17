@@ -1,3 +1,14 @@
+import ImageChef from './assets/chef.jpeg';
+import { generateImageElement } from './utils';
+
+const contentDivContainer = document.getElementById('content');
+
 export function generateHomeTab() {
-    console.log('Home Tab Content');
+    contentDivContainer.appendChild(
+        generateImageElement(
+            ImageChef, {
+                'id': 'home-image-chef',
+            }
+        )
+    );
 }
