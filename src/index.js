@@ -32,8 +32,9 @@ function addTabEventListeners() {
 }
 
 (function init() {
+    const header = document.createElement('header');
+
     (function generateNavBar() {
-        const header = document.createElement('header');
         initialTabContents.forEach((tabName) => {
             generateTab(tabName, header);
         });
@@ -47,4 +48,6 @@ function addTabEventListeners() {
         footer.innerText = 'Copyright ©️ 2023 OO Studio';
         body.appendChild(footer);
     })();
+
+    generateHomeTab();
 })();
