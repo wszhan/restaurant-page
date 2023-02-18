@@ -1,29 +1,40 @@
 :root {
     --body-padding: 1rem;
+    --body-flex-gap: 1rem;
+    --body-height: calc(100vh - 2 * var(--body-padding));
 
     --header-flex-gap: 1rem;
+    --header-font-size: 1rem;
+    --header-height: calc(3 * var(--header-font-size));
+
+    --content-height: calc(var(--body-height) - var(--header-height) - var(--footer-height));
+
+    --footer-font-size: 1rem;
+    --footer-padding: 0rem;
+    --footer-height: calc(2 * var(--footer-font-size));
 }
 
 body {
     margin: 0;
     padding: var(--body-padding); 
-    height: calc(100vh - 2 * var(--body-padding));
+    height: var(--body-height);
 
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    gap: var(--body-flex-gap);
 }
 
 header {
     display: flex;
     gap: var(--header-flex-gap);
     justify-content: space-around;
+    height: var(--header-height);
 }
 
 .nav-tab {
-    height: 2em;
     width: calc((100vw - 4 * var(--header-flex-gap)) / 4);
-
+    font-size: var(--header-font-size);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -50,12 +61,33 @@ div#contact-tab:hover::before {
     content: "联系方式";
 }
 
-#home-image-chef {
-    width: 100%;
+#content {
+    height: var(--content-height);
+    flex: 1;
 }
 
+#home-tab-content {
+    display: flex;
+    justify-content: center;
+
+    height: 100%;
+}
+
+#home-image-chef {
+    height: 100%;
+}
+
+
 footer {
+    height: var(--footer-height);
     text-align: center;
+    font-size: var(--footer-font-size);
+    padding-top: var(--footer-padding);
+    padding-bottom: var(--footer-padding);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 #credits {

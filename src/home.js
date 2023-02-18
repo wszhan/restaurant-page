@@ -3,14 +3,20 @@ import { generateImageCredits, generateImageElement } from './utils';
 
 const contentDivContainer = document.getElementById('content');
 
-export function generateHomeTab() {
-    contentDivContainer.appendChild(
-        generateImageElement(
-            ImageChef, {
-                'id': 'home-image-chef',
-            }
-        )
+function generateHomeTabImage() {
+    return generateImageElement(
+        ImageChef, {
+            'id': 'home-image-chef',
+        }
     );
+}
+
+export function generateHomeTab() {
+    const div = document.createElement('div');
+    div.setAttribute('id', 'home-tab-content');
+    div.appendChild(generateHomeTabImage());
+
+    contentDivContainer.appendChild(div);
 
     generateImageCredits();
 }
