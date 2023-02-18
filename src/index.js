@@ -1,5 +1,6 @@
 import './style.css';
 import { generateHomeTab } from './home';
+import { generateMenuTab } from './menu';
 
 const body = document.body;
 const contentDivContainer = document.getElementById('content');
@@ -50,4 +51,5 @@ function addTabEventListeners() {
     })();
 
     // generateHomeTab(); // UNCOMMENT this line after finishing everything
+    generateMenuTab();
 })();

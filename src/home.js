@@ -7,6 +7,7 @@ function generateHomeTabImage() {
     return generateImageElement(
         ImageChef, {
             'id': 'home-image-chef',
+            'alt': 'The picture of Chef Bu-Bu making sushi.',
         }
     );
 }

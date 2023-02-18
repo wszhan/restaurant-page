@@ -77,6 +77,24 @@ div#contact-tab:hover::before {
     height: 100%;
 }
 
+.menu-cards {
+    --menu-card-area-padding: 5%;
+
+    padding: var(--menu-card-area-padding);
+    display: grid;
+    width: calc(100% - 2 * var(--menu-card-area-padding));
+    height: calc(100% - 2 * var(--menu-card-area-padding));
+
+    gap: 5% 3%;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+
+    overflow-y: scroll;
+}
+
+.menu-card {
+    /* aspect-ratio: 1 / 1; */
+}
+
 
 footer {
     height: var(--footer-height);
