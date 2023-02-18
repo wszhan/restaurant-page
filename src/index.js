@@ -49,5 +49,5 @@ function addTabEventListeners() {
         body.appendChild(footer);
     })();
 
-    generateHomeTab();
+    // generateHomeTab(); // UNCOMMENT this line after finishing everything
 })();
