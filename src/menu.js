@@ -24,9 +24,13 @@ function MenuItem(imgSrc, dishName, description, price) {
     };
 }
 
-
-
 const menuItemsInfo = [
+    MenuItem(Sukiyaki, 'Sukiyaki', 'Japanese style little hotpot with a mild taste of sweet and salty', 9.99),
+    MenuItem(Takoyaki, 'Takoyaki', 'The picture seems like a Takoyaki. I am not sure about the content but it must be delicious.', 9.99),
+    MenuItem(SalmonSushi, 'Salmon Sushi', 'A must-try sushi that is so classic and tasty. What do you think?', 5.99),
+    MenuItem(Omuraisu, 'Omuraisu', 'Jasmine rice rolled in eggs and mildly covered in ketchup.', 11.99),
+    MenuItem(SunnySideUpEgg, 'Sunny-side-up Egg', 'Great for breakfast, or served as a snack.', 3.99),
+    MenuItem(EggTart, 'Egg Tart', 'Delicately baked Cantonese dimsum style egg tart.', 2.99),
     {
         imgSrc: ChickDrumStick,
         dishName: 'Chicken Drumstick',
@@ -65,7 +69,25 @@ function createMenuCard(imageSrc, dishName, price, description) {
         'alt': `An image of ${dishName}`,
     });
 
+    const titleDiv = document.createElement('div');
+    titleDiv.classList.add('dish-name');
+    titleDiv.textContent = dishName;
+    const descDiv = document.createElement('div');
+    descDiv.classList.add('dish-description');
+    descDiv.textContent = description;
+    const priceDiv = document.createElement('div');
+    priceDiv.classList.add('dish-price');
+    priceDiv.textContent = `\$${price}`;
+
+    const menuText = document.createElement('div');
+    menuText.classList.add('menu-text');
+    menuText.appendChild(titleDiv);
+    menuText.appendChild(descDiv);
+    menuText.appendChild(priceDiv);
+
     menuCard.appendChild(img);
+    menuCard.appendChild(menuText);
+
     return menuCard;
 }
 

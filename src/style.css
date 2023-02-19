@@ -87,21 +87,33 @@ div#contact-tab:hover::before {
 
     gap: 1rem;
     grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
-    grid-auto-rows: minmax(100px, 30%);
+    grid-auto-rows: minmax(200px, 30%);
 
     overflow-y: scroll;
 }
 
 .menu-card {
     --menu-card-padding: 10px;
+    --menu-card-column-gap: 10px;
     padding: var(--menu-card-padding);
     background-color: rgb(255, 251, 218);
+
+    display: flex;
+    column-gap: var(--menu-card-column-gap);
 }
 
-.menu-card img {
-    height: 100%;
+.menu-text > .dish-name {
+    font-size: 2em;
+}
+.menu-text > .dish-price {
+    font-style: italic;
 }
 
+.menu-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
 
 footer {
     height: var(--footer-height);
