@@ -1,8 +1,30 @@
 import { generateImageCredits, generateImageElement } from "./utils";
 import ChickDrumStick from './assets/chicken-drumstick-with-rice.jpeg';
 import Tempura from './assets/tempura.jpeg';
+import Hotdog from './assets/hotdog.jpeg';
+import Chips from './assets/chips.jpeg';
+import Chocolate from './assets/chocolate.jpeg';
+import Donuts from './assets/donuts.jpeg';
+import EggTart from './assets/egg-tart.jpeg';
+import EnokiMushroomBeefRoll from './assets/enoki-mushroom-beef-rolls.jpeg';
+import Gelato from './assets/gelato.jpeg';
+import Omuraisu from './assets/omuraisu.jpeg';
+import Oreo from './assets/oreo.jpeg';
+import RamenWithSoftBoiledEgg from './assets/ramen-with-soft-boiled-egg.jpeg';
+import SalmonSushi from './assets/salmon-sushi.jpeg';
+import Sukiyaki from './assets/sukiyaki.jpeg';
+import SunnySideUpEgg from './assets/sunny-side-up.jpeg';
+import Takoyaki from './assets/takoyaki.jpeg';
 
 const contentDivContainer = document.getElementById('content');
+
+function MenuItem(imgSrc, dishName, description, price) {
+    return {
+        imgSrc, dishName, description, price
+    };
+}
+
+
 
 const menuItemsInfo = [
     {
@@ -15,7 +37,17 @@ const menuItemsInfo = [
         dishName: 'Shrimp Tempura',
         description: 'Delicately made Japanese style tempura served with nothing else.',
         price: 5.99,
-    }
+    }, 
+    MenuItem(
+        EnokiMushroomBeefRoll, 'Enoki Mushroom Beef Roll', 
+        'Fresh enoki mushroom rolled in beef',
+        19.99
+    ),
+    MenuItem(
+        RamenWithSoftBoiledEgg, 'Ramen', 
+        'Authentic Japanese style ramen served with Softboiled Egg and Baby Carrots',
+        22.99
+    ),
 ];
 
 function createMenuCardsContainer() {
