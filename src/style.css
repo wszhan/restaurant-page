@@ -92,6 +92,11 @@ div#contact-tab:hover::before {
     overflow-y: scroll;
 }
 
+.menu-card:hover {
+    box-sizing: border-box;
+    border: purple solid 1px;
+}
+
 .menu-card {
     --menu-card-padding: 10px;
     --menu-card-column-gap: 10px;
