@@ -25,10 +25,21 @@ function generateTab(tabName, header) {
     header.appendChild(tab);
 }
 
+function clearContentContainer() {
+    contentDivContainer.innerHTML = '';
+}
+
 function addTabEventListeners() {
     const homeTab = document.querySelector('#home-tab');
     homeTab.addEventListener('click', () => {
+        clearContentContainer();
         generateHomeTab();
+    })
+
+    const menuTab = document.querySelector('#menu-tab');
+    menuTab.addEventListener('click', () => {
+        clearContentContainer();
+        generateMenuTab();
     })
 }
 
@@ -51,5 +62,5 @@ function addTabEventListeners() {
     })();
 
     // generateHomeTab(); // UNCOMMENT this line after finishing everything
-    generateMenuTab();
+    // generateMenuTab();
 })();

@@ -25,8 +25,8 @@ function MenuItem(imgSrc, dishName, description, price) {
 }
 
 const menuItemsInfo = [
-    MenuItem(Sukiyaki, 'Sukiyaki', 'Japanese style little hotpot with a mild taste of sweet and salty', 9.99),
-    MenuItem(Takoyaki, 'Takoyaki', 'The picture seems like a Takoyaki. I am not sure about the content but it must be delicious.', 9.99),
+    MenuItem(Sukiyaki, 'Sukiyaki', 'Japanese style little hotpot with a mild taste of sweet and salty.', 9.99),
+    MenuItem(Takoyaki, 'Takoyaki', 'The picture looks like it\'s a Takoyaki. I am not sure about the content but it must be delicious.', 9.99),
     MenuItem(SalmonSushi, 'Salmon Sushi', 'A must-try sushi that is so classic and tasty. What do you think?', 5.99),
     MenuItem(Omuraisu, 'Omuraisu', 'Jasmine rice rolled in eggs and mildly covered in ketchup.', 11.99),
     MenuItem(SunnySideUpEgg, 'Sunny-side-up Egg', 'Great for breakfast, or served as a snack.', 3.99),
@@ -52,6 +52,7 @@ const menuItemsInfo = [
         'Authentic Japanese style ramen served with Softboiled Egg and Baby Carrots',
         22.99
     ),
+    MenuItem(Hotdog, 'Hotdog', 'This is an Asian restaurant but we served hotdog for unknown reasons.', 22.99),
 ];
 
 function createMenuCardsContainer() {
@@ -100,7 +101,6 @@ export function generateMenuTab() {
         menuCardsContainer.appendChild(card);
     });
 
-    // return menuCardsContainer;
     contentDivContainer.appendChild(menuCardsContainer);
 
     generateImageCredits();
