@@ -3,7 +3,7 @@ import ImageChef from './assets/chef.jpeg';
 
 import { generateImageCredits, generateImageElement } from './utils';
 
-const contentDivContainer = document.getElementById('content');
+// const contentDivContainer = document.getElementById('content');
 
 function generateProfilePictures() {
     const div = document.createElement('div');
@@ -33,7 +33,7 @@ function generateIntroduction() {
     return div;
 }
 
-export function generateAboutTab() {
+export function generateAboutTab(contentDivContainer) {
     const div = document.createElement('div');
     div.setAttribute('id', 'about-page');
 

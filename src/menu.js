@@ -16,7 +16,7 @@ import Sukiyaki from './assets/sukiyaki.jpeg';
 import SunnySideUpEgg from './assets/sunny-side-up.jpeg';
 import Takoyaki from './assets/takoyaki.jpeg';
 
-const contentDivContainer = document.getElementById('content');
+// const contentDivContainer = document.getElementById('content');
 
 function MenuItem(imgSrc, dishName, description, price) {
     return {
@@ -92,7 +92,7 @@ function createMenuCard(imageSrc, dishName, price, description) {
     return menuCard;
 }
 
-export function generateMenuTab() {
+export function generateMenuTab(contentDivContainer) {
     const menuCardsContainer = createMenuCardsContainer();
 
     menuItemsInfo.forEach(info => {

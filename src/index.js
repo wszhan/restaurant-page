@@ -37,21 +37,21 @@ function addTabEventListeners() {
     homeTab.addEventListener('click', () => {
         clearContentContainer();
         removeImageCredits();
-        generateHomeTab();
+        generateHomeTab(contentDivContainer);
     })
 
     const menuTab = document.querySelector('#menu-tab');
     menuTab.addEventListener('click', () => {
         clearContentContainer();
         removeImageCredits();
-        generateMenuTab();
+        generateMenuTab(contentDivContainer);
     })
 
     const aboutTab = document.querySelector('#about-tab');
     aboutTab.addEventListener('click', () => {
         clearContentContainer();
         removeImageCredits();
-        generateAboutTab();
+        generateAboutTab(contentDivContainer);
     })
 
     const contactTab = document.querySelector('#contact-tab');
@@ -80,8 +80,5 @@ function addTabEventListeners() {
         body.appendChild(footer);
     })();
 
-    generateHomeTab(); // UNCOMMENT this line after finishing everything
-    // generateMenuTab();
-    // generateAboutTab();
-    // generateContactTab(contentDivContainer);
+    generateHomeTab(contentDivContainer);
 })();

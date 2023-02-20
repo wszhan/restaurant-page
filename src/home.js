@@ -1,7 +1,7 @@
 import ImageChef from './assets/chef.jpeg';
 import { generateImageCredits, generateImageElement } from './utils';
 
-const contentDivContainer = document.getElementById('content');
+// const contentDivContainer = document.getElementById('content');
 
 function generateHomeTabImage() {
     return generateImageElement(
@@ -12,7 +12,7 @@ function generateHomeTabImage() {
     );
 }
 
-export function generateHomeTab() {
+export function generateHomeTab(contentDivContainer) {
     const div = document.createElement('div');
     div.setAttribute('id', 'home-tab-content');
     div.appendChild(generateHomeTabImage());
