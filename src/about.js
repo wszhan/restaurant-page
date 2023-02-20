@@ -28,7 +28,7 @@ function generateIntroduction() {
     const div = document.createElement('div');
     div.setAttribute('id', 'about-introduction-text');
 
-    div.innerText = 'Chef Bu-Bu is a master panda chef in growing food and fine cuisine. Although he himself eats mostly bamboo, he cooks all kinds of delicious food that bring joy and happiness to his customers. He only cooks his own growing vegetables, and buys meats from trusted local vendors whom he has known for decades (although Chef Bu-Bu himself is only a few years ago).';
+    div.innerText = 'Chef Bu-Bu is a master panda chef in growing food and catering fine cuisine. Although he himself eats mostly bamboo, he cooks all kinds of delicious food that bring joy and happiness to his customers. He only cooks his own growing vegetables, and buys meats from trusted local vendors whom he has known for decades (although Chef Bu-Bu himself is only a few years ago).';
 
     return div;
 }

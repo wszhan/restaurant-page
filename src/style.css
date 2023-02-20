@@ -143,7 +143,6 @@ div#contact-tab:hover::before {
     justify-items: end;
 }
 
-/* #about-page img { */
 #about-profile-pictures img {
     height: 100%;
 }
@@ -153,7 +152,9 @@ div#contact-tab:hover::before {
     flex-direction: column;
     justify-content: center;
 
-    padding: 0 50px;
+    padding: 0 20%;
+    font-size: 1.3em;
+    line-height: 1.5em;
 }
 
 footer {
