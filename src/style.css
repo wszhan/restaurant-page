@@ -195,10 +195,20 @@ div#contact-tab:hover::before {
     height: 10em;
 }
 
+.form-label, .form-text-input {
+    font-size: 1em;
+}
+
 form > button#submit-button {
+    background-color: rgb(109, 189, 255);
+    border: none;
     grid-column: span 2;
-    width: fit-content;
-    padding: 1em;
+    width: 15%;
+    height: 2em;
+    font-size: 1em;
+    padding: 0;
+    border-radius: 0.5em;
+    color: rgb(255, 255, 255);
 }
 
 footer {
