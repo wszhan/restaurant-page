@@ -74,5 +74,5 @@ function addTabEventListeners() {
 
     // generateHomeTab(); // UNCOMMENT this line after finishing everything
     // generateMenuTab();
-    generateAboutTab();
+    // generateAboutTab();
 })();

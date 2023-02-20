@@ -10,6 +10,31 @@
 
 <body>
     <div id="content">
+        <div id="contact-form-container">
+            <form id="contact-form">
+                <div id="form-title">Contact Form</div>
+
+                <label class="form-label" for="name">How should we address you?</label>
+                <input class="form-text-input" type="text" id="name" name="name" required>
+
+                <label for="email" class="form-label">What is your Email address?</label>
+                <input type="email" class="form-text-input" id="email" name="email" required>
+
+                <label for="user-type" class="form-label">Please choose one that best describes you.</label>
+                <select name="user-type" id="user-type">
+                    <optgroup label="Please choose one from the dropdown list">
+                        <option value="customer">Restaurant Customer</option>
+                        <option value="fan">Just a fan of Chef Bu-Bu or the cuisine</option>
+                    </optgroup>
+                </select>
+
+                <label for="Comments" class="form-label">Any comments you would like to share with us?</label>
+                <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
+
+                <button id="submit-button">Send</button>
+
+            </form>
+        </div>
     </div>
 </body>
 
