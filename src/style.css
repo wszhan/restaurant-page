@@ -123,6 +123,11 @@ div#contact-tab:hover::before {
     column-gap: var(--menu-card-column-gap);
 }
 
+.menu-card img {
+    height: 100%;
+    aspect-ratio: 1 / 1;
+}
+
 .menu-text > .dish-name {
     font-size: 2em;
 }
@@ -156,7 +161,6 @@ div#contact-tab:hover::before {
 
 #about-profile-pictures img {
     height: 100%;
-    aspect-ratio: 1 / 1;
 }
 
 #about-introduction-text {
