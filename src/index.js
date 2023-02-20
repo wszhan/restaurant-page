@@ -5,11 +5,13 @@ import { generateAboutTab } from './about';
 import { removeImageCredits } from './utils';
 import { generateContactTab } from './contact';
 
-const body = document.body;
-const contentDivContainer = document.getElementById('content');
 const initialTabContents = [
     'HOME', 'MENU', 'ABOUT', 'CONTACT'
 ];
+const body = document.body;
+
+const contentDivContainer = document.createElement('div');
+contentDivContainer.setAttribute('id', 'content');
 
 function generateTab(tabName, header) {
     if (!tabName) {
@@ -63,6 +65,9 @@ function addTabEventListeners() {
 }
 
 (function init() {
+
+    body.appendChild(contentDivContainer);
+
     const header = document.createElement('header');
 
     (function generateNavBar() {
