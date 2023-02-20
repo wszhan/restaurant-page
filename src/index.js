@@ -2,6 +2,7 @@ import './style.css';
 import { generateHomeTab } from './home';
 import { generateMenuTab } from './menu';
 import { generateAboutTab } from './about';
+import { removeImageCredits } from './utils';
 
 const body = document.body;
 const contentDivContainer = document.getElementById('content');
@@ -34,18 +35,21 @@ function addTabEventListeners() {
     const homeTab = document.querySelector('#home-tab');
     homeTab.addEventListener('click', () => {
         clearContentContainer();
+        removeImageCredits();
         generateHomeTab();
     })
 
     const menuTab = document.querySelector('#menu-tab');
     menuTab.addEventListener('click', () => {
         clearContentContainer();
+        removeImageCredits();
         generateMenuTab();
     })
 
     const aboutTab = document.querySelector('#about-tab');
     aboutTab.addEventListener('click', () => {
         clearContentContainer();
+        removeImageCredits();
         generateAboutTab();
     })
 }
@@ -70,5 +74,5 @@ function addTabEventListeners() {
 
     // generateHomeTab(); // UNCOMMENT this line after finishing everything
     // generateMenuTab();
-    // generateAboutTab();
+    generateAboutTab();
 })();

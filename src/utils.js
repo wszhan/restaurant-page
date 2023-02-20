@@ -10,6 +10,13 @@ export function generateImageElement(imageSource, imageAttributes) {
     return image;
 }
 
+export function removeImageCredits() { // if any
+    const credits = document.getElementById('credits');
+    if (credits) {
+        credits.remove();
+    }
+}
+
 export function generateImageCredits() {
     const anchor = document.createElement('a');
     anchor.href = 'https://weibo.com/u/2623471650';
