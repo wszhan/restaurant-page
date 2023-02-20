@@ -1,4 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
 :root {
+    --fallback-font-families: 'Open Sans', 'Courier New', Courier, monospace;
+
     --body-padding: 1rem;
     --body-flex-gap: 1rem;
     --body-height: 95vh;
@@ -28,6 +33,8 @@ body {
     flex-direction: column;
     justify-content: space-between;
     gap: var(--body-flex-gap);
+
+    font-family: var(--fallback-font-families);
 }
 
 header {
@@ -35,6 +42,10 @@ header {
     gap: var(--header-flex-gap);
     justify-content: space-around;
     height: var(--header-height);
+}
+
+header, footer, .dish-name {
+    font-family: 'Aboreto', var(--fallback-font-families);
 }
 
 .nav-tab {
