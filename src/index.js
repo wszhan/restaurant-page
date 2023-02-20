@@ -1,6 +1,7 @@
 import './style.css';
 import { generateHomeTab } from './home';
 import { generateMenuTab } from './menu';
+import { generateAboutTab } from './about';
 
 const body = document.body;
 const contentDivContainer = document.getElementById('content');
@@ -41,6 +42,12 @@ function addTabEventListeners() {
         clearContentContainer();
         generateMenuTab();
     })
+
+    const aboutTab = document.querySelector('#about-tab');
+    aboutTab.addEventListener('click', () => {
+        clearContentContainer();
+        generateAboutTab();
+    })
 }
 
 (function init() {
@@ -63,4 +70,5 @@ function addTabEventListeners() {
 
     // generateHomeTab(); // UNCOMMENT this line after finishing everything
     // generateMenuTab();
+    // generateAboutTab();
 })();
