@@ -53,6 +53,13 @@ function addTabEventListeners() {
         removeImageCredits();
         generateAboutTab();
     })
+
+    const contactTab = document.querySelector('#contact-tab');
+    contactTab.addEventListener('click', () => {
+        clearContentContainer();
+        removeImageCredits();
+        generateContactTab(contentDivContainer);
+    })
 }
 
 (function init() {
@@ -73,8 +80,8 @@ function addTabEventListeners() {
         body.appendChild(footer);
     })();
 
-    // generateHomeTab(); // UNCOMMENT this line after finishing everything
+    generateHomeTab(); // UNCOMMENT this line after finishing everything
     // generateMenuTab();
     // generateAboutTab();
-    generateContactTab(contentDivContainer);
+    // generateContactTab(contentDivContainer);
 })();
